@@ -1,0 +1,16 @@
+- hosts: localhost
+  connection: local
+  gather_facts: no
+
+  tasks:
+   - name: Provision AWS Instances
+     ec2:
+       key_name: ans_mukul
+       group: default
+       instance_type: m3.medium
+       image: ami-a2c111c1
+       ec2_region: ap-southeast-1
+       count: 1
+       wait: true
+       instance_tags: 
+           Name: AWS-Demo
