@@ -1,12 +1,17 @@
+##Manage AWS Instances with Ansible
+
 Pre-requisites
 --------------
 
-Requirements (on Ansible host that executes module)
----------------------------------------------------
+- python (2.7)
+- boto (2.40)
 
-* Install python-boto on your Ansible host either through EPEL or pip,
+Installation
+------------
 
-   yum install python-boto OR pip install boto
+* Install boto on your Ansible host either through pip,
+
+   pip install boto
 
 * Create AWS_ACCESS_KEY and AWS_SECRET_ACCESS_KEY environment variables (either export in a shell or place in your ~/.bashrc file)
 
