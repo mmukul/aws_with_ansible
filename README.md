@@ -21,11 +21,6 @@ Installation & Variables
 
    export AWS_ACCESS_KEY_ID='YOUR_AWS_API_KEY' && export AWS_SECRET_ACCESS_KEY='YOUR_AWS_API_SECRET_KEY'
 
-* Add a local inventory to /etc/ansible/hosts file,
-
-   %n[local]%n
-   localhost
-
 Provision an AWS Instance with Ansible Playbook
 -----------------------------------------------
 
