@@ -6,8 +6,7 @@ Requirements (on Ansible host that executes module)
 
 * Install python-boto on your Ansible host either through EPEL or pip,
 
-   yum install python-boto \
-   pip install boto
+   yum install python-boto OR pip install boto
 
 * Create AWS_ACCESS_KEY and AWS_SECRET_ACCESS_KEY environment variables (either export in a shell or place in your ~/.bashrc file)
 
