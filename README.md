@@ -9,7 +9,7 @@ Pre-requisites
 Installation
 ------------
 
-* Install boto on your Ansible host either through pip,
+* Install boto (python API) on your Ansible host either through pip,
 
    pip install boto
 
@@ -25,17 +25,17 @@ Installation
 Provision an AWS Instance with Ansible Playbook
 -----------------------------------------------
 
-1). Create dynamic inventory file through AWS EC2 External Inventory Script, 
+* Create dynamic inventory file through AWS EC2 External Inventory Script, 
 
-    * Download https://raw.github.com/ansible/ansible/devel/contrib/inventory/ec2.py script to "/etc/ansible" and chmod +x it
+   - Download https://raw.github.com/ansible/ansible/devel/contrib/inventory/ec2.py script to "/etc/ansible" and chmod +x it
 
-2). Also, need to copy https://raw.githubusercontent.com/ansible/ansible/devel/contrib/inventory/ec2.ini to "/etc/ansible" directory. 
+* Also, need to copy https://raw.githubusercontent.com/ansible/ansible/devel/contrib/inventory/ec2.ini to "/etc/ansible" directory. 
 
-3). To successfully make an API call to AWS, you will need to configure Boto (the Python interface to AWS) and export the two environment variables:
+* To successfully make an API call to AWS, you will need to configure Boto (the Python interface to AWS) and export the two environment variables:
 
     export ANSIBLE_HOSTS=/etc/ansible/ec2.py && export EC2_INI_PATH=/etc/ansible/ec2.ini 
 
-4). Using an SSH agent is the best way to authenticate with end nodes, as this alleviates the need to copy the .pem files around. To add an agent,
+* Using an SSH agent is the best way to authenticate with end nodes, as this alleviates the need to copy the .pem files around. To add an agent,
 
     ssh-agent bash && ssh-add ~/.ssh/keypair.pem 
 
