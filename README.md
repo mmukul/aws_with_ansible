@@ -6,8 +6,8 @@ Pre-requisites
 - python (2.7)
 - boto (2.40)
 
-Installation
-------------
+Installation & Variables
+------------------------
 
 * Install boto (python API) on your Ansible host either through pip,
 
@@ -19,7 +19,7 @@ Installation
 
 * Add a local inventory to /etc/ansible/hosts file,
 
-   [local]
+   [local];
    localhost
 
 Provision an AWS Instance with Ansible Playbook
