@@ -1,3 +1,7 @@
+
+Author: Mukul Malhotra
+
+
 ##Manage AWS Instances with Ansible
 
 Pre-requisites
@@ -19,7 +23,7 @@ Installation & Variables
 
 * Add a local inventory to /etc/ansible/hosts file,
 
-   [local]
+   [local]%n
    localhost
 
 Provision an AWS Instance with Ansible Playbook
