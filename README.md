@@ -19,7 +19,7 @@ Installation & Variables
 
 * Add a local inventory to /etc/ansible/hosts file,
 
-   [local]\n
+   [local]
    localhost
 
 Provision an AWS Instance with Ansible Playbook
