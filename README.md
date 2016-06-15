@@ -39,7 +39,7 @@ Provision an AWS Instance with Ansible Playbook
 
     ssh-agent bash && ssh-add ~/.ssh/keypair.pem 
 
-Provision an AWS Instance with Ansible ad hoc method
+Provision an AWS Instance with Ansible Ad-Hoc method
 ----------------------------------------------------
 
 $ ansible localhost -m ec2 -a "image=ami-d44b4286 ec2_region=ap-southeast-1 instance_type=m3.medium count=1 keypair=ans_mukul group=default wait=yes" -c local
