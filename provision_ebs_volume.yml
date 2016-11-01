@@ -1,0 +1,14 @@
+- hosts: localhost
+  connection: local
+  gather_facts: no
+
+  tasks:
+   - name: Create new volume using SSD storage
+     ec2_vol:
+      name: Demo_EBS_Volume
+      instance: i-9f7d8338
+      volume_size: 1
+      volume_type: gp2
+      ec2_region: ap-southeast-1
+      device_name: /dev/sdf
+      #snapshot: 
